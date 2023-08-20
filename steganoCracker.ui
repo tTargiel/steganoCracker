@@ -106,7 +106,7 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>11</x>
      <y>150</y>
      <width>110</width>
      <height>77</height>
@@ -248,13 +248,13 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>381</y>
+     <y>378</y>
      <width>200</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Number of pixels to read/write</string>
+    <string>Number of pixels to read</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit_text">
@@ -263,7 +263,7 @@
      <x>11</x>
      <y>451</y>
      <width>580</width>
-     <height>80</height>
+     <height>82</height>
     </rect>
    </property>
    <property name="focusPolicy">
@@ -296,7 +296,7 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>401</y>
+     <y>399</y>
      <width>75</width>
      <height>23</height>
     </rect>
