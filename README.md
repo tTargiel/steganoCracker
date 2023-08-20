@@ -14,6 +14,7 @@ I created this application for my own use, as it is very useful in many of CTF c
 
 
 ## Screenshots  
+Down below you can see, that my application successfully recovered flag from the picture from BCACTF-4.0 CTF:  
 ![main](https://raw.githubusercontent.com/tTargiel/steganoCracker/main/_resources/main.png?raw=true)  
 
 
@@ -28,7 +29,7 @@ git clone https://github.com/tTargiel/steganoCracker.git
 cd steganoCracker/  
 python3 -m venv venv
 source venv/bin/activate
-python -m pip install Pillow PyQt6 
+python3 -m pip install Pillow PyQt6 
 python3 main.py
 ```  
 
