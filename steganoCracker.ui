@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>steganoCracker</class>
+ <widget class="QDialog" name="steganoCracker">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>steganoCracker</string>
+  </property>
+  <widget class="QLabel" name="label_path">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>400</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Specify path of the image</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_operation">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>71</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select operation</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_operation">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>91</y>
+     <width>150</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Write</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Read</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_image">
+   <property name="geometry">
+    <rect>
+     <x>241</x>
+     <y>71</y>
+     <width>350</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>32</y>
+     <width>581</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_path">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_browse">
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>Browse</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="lineEdit_path"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>110</width>
+     <height>77</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_subpixels">
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radioButton_grb">
+      <property name="text">
+       <string>GRB</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QRadioButton" name="radioButton_rbg">
+      <property name="text">
+       <string>RBG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="radioButton_brg">
+      <property name="text">
+       <string>BRG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QRadioButton" name="radioButton_gbr">
+      <property name="text">
+       <string>GBR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="radioButton_rgb">
+      <property name="text">
+       <string>RGB</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="radioButton_bgr">
+      <property name="text">
+       <string>BGR</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_subpixels">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>131</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select subpixel layout</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pattern">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>241</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select pattern</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_pattern">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>261</y>
+     <width>150</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Horizontal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vertical</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diagonal</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_order">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>301</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select order</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_order">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>321</y>
+     <width>150</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Lowest pixel first</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Highest pixel first</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_number">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>381</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Number of pixels to read/write</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_text">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>451</y>
+     <width>580</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="tabChangesFocus">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_quit">
+   <property name="geometry">
+    <rect>
+     <x>511</x>
+     <y>551</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_number">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>401</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>4096</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_execute">
+   <property name="geometry">
+    <rect>
+     <x>421</x>
+     <y>551</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="text">
+    <string>Execute</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_path</tabstop>
+  <tabstop>comboBox_operation</tabstop>
+  <tabstop>radioButton_rgb</tabstop>
+  <tabstop>radioButton_rbg</tabstop>
+  <tabstop>radioButton_grb</tabstop>
+  <tabstop>radioButton_gbr</tabstop>
+  <tabstop>radioButton_brg</tabstop>
+  <tabstop>radioButton_bgr</tabstop>
+  <tabstop>comboBox_pattern</tabstop>
+  <tabstop>comboBox_order</tabstop>
+  <tabstop>spinBox_number</tabstop>
+  <tabstop>textEdit_text</tabstop>
+  <tabstop>graphicsView_image</tabstop>
+  <tabstop>pushButton_execute</tabstop>
+  <tabstop>pushButton_quit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
