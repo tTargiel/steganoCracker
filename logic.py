@@ -280,5 +280,5 @@ class logic():
                 logic.writeOutput(window, f"'{path}' is a directory, expecting image file.")
             except FileNotFoundError:
                 logic.writeOutput(window, f"File '{path}' was not found on this computer.")
-            # except:
-                # logic.writeOutput(window, "Something went wrong.")
+            except:
+                logic.writeOutput(window, "Something went wrong.")
