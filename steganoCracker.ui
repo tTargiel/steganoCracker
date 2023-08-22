@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>855</width>
     <height>584</height>
    </rect>
   </property>
@@ -70,8 +70,8 @@
     <rect>
      <x>241</x>
      <y>71</y>
-     <width>350</width>
-     <height>350</height>
+     <width>600</width>
+     <height>360</height>
     </rect>
    </property>
    <property name="focusPolicy">
@@ -83,7 +83,7 @@
     <rect>
      <x>10</x>
      <y>32</y>
-     <width>581</width>
+     <width>831</width>
      <height>25</height>
     </rect>
    </property>
@@ -177,7 +177,7 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>241</y>
+     <y>271</y>
      <width>200</width>
      <height>16</height>
     </rect>
@@ -190,7 +190,7 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>261</y>
+     <y>291</y>
      <width>150</width>
      <height>23</height>
     </rect>
@@ -215,7 +215,7 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>301</y>
+     <y>331</y>
      <width>200</width>
      <height>16</height>
     </rect>
@@ -228,7 +228,7 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>321</y>
+     <y>351</y>
      <width>150</width>
      <height>23</height>
     </rect>
@@ -248,8 +248,8 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>378</y>
-     <width>200</width>
+     <y>391</y>
+     <width>151</width>
      <height>16</height>
     </rect>
    </property>
@@ -262,7 +262,7 @@
     <rect>
      <x>11</x>
      <y>451</y>
-     <width>580</width>
+     <width>830</width>
      <height>82</height>
     </rect>
    </property>
@@ -279,7 +279,7 @@
   <widget class="QPushButton" name="pushButton_quit">
    <property name="geometry">
     <rect>
-     <x>511</x>
+     <x>761</x>
      <y>551</y>
      <width>80</width>
      <height>23</height>
@@ -296,7 +296,7 @@
    <property name="geometry">
     <rect>
      <x>11</x>
-     <y>399</y>
+     <y>411</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -308,7 +308,7 @@
   <widget class="QPushButton" name="pushButton_execute">
    <property name="geometry">
     <rect>
-     <x>421</x>
+     <x>671</x>
      <y>551</y>
      <width>80</width>
      <height>23</height>
@@ -320,6 +320,26 @@
    <property name="text">
     <string>Execute</string>
    </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_subpixels">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>231</y>
+     <width>150</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>3 subpixels per pixel</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 subpixel per pixel</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <tabstops>
