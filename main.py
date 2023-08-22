@@ -90,10 +90,9 @@ class Window(QDialog):
 
         if self.selected_operation == 0:
             text = self.ui.textEdit_text.toPlainText() # Get the text from the textEdit_text
-            length = len(text) # Calculate the length of the text
-            logic.writeHidden(self, path, radio_text, pattern_text, order_text, length, text, subpixels_text, variable)
+            logic.writeHidden(self, path, radio_text, pattern_text, order_text, text, subpixels_text, variable)
         else:
-            length = self.ui.spinBox_number.value() * 3 - variable
+            length = (self.ui.spinBox_number.value() - variable) * 3
             logic.readHidden(self, path, radio_text, pattern_text, order_text, length, subpixels_text, variable)
 
 if __name__ == "__main__":

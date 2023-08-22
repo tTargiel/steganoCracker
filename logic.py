@@ -92,9 +92,13 @@ class logic():
                     y = start_y + i * step_y
                     
                     # Adjust x and y based on order_text
-                    if order_text == 1:
-                        x -= i * step_x
-                        y -= i * step_y
+                    if (order_text == 0):
+                        pass
+                    elif (order_text == 1) and (x > 0) and (y > 0):
+                        x = start_x - i * step_x
+                        y = start_y - i * step_y
+                    else:
+                        break
 
                     if radio_text == "RGB":
                         message += str(format(pixels[x, y][0] & 1, 'b'))
@@ -135,7 +139,7 @@ class logic():
             except:
                 logic.writeOutput(window, "Something went wrong.")
 
-    def writeHidden(window, path, radio_text, pattern_text, order_text, length, text, subpixels_text, variable):
+    def writeHidden(window, path, radio_text, pattern_text, order_text, text, subpixels_text, variable):
         if path:
             try:
                 img = Image.open(path)
@@ -178,9 +182,13 @@ class logic():
                     y = start_y + i * step_y
                     
                     # Adjust x and y based on order_text
-                    if order_text == 1:
-                        x -= i * step_x
-                        y -= i * step_y
+                    if (order_text == 0):
+                        pass
+                    elif (order_text == 1) and (x > 0) and (y > 0):
+                        x = start_x - i * step_x
+                        y = start_y - i * step_y
+                    else:
+                        break
 
                     if radio_text == "RGB":
                         r, g, b = pixels[x, y]

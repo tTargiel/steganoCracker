@@ -14,8 +14,9 @@ I created this application for my own use, as it is very useful in many of CTF c
 
 
 ## Screenshots  
-Down below you can see, that my application successfully recovered flag from the picture from BCACTF-4.0 CTF:  
-![main](https://raw.githubusercontent.com/tTargiel/steganoCracker/main/_resources/main.png?raw=true)  
+Down below you can see, that my application successfully recovered flags from both BCACTF-4.0 and MSHP 2023 CTF image files:  
+![bcactf](https://raw.githubusercontent.com/tTargiel/steganoCracker/main/_resources/bcactf.png?raw=true)  
+![mshp](https://raw.githubusercontent.com/tTargiel/steganoCracker/main/_resources/mshp.png?raw=true)  
 
 
 ## Installation  
